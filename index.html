@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- custome awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><h3>LOGO</h3></a>
+        </div>
+        <div class="navBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+            </ul>
+        </div>
+        <input id="search" type="text" class="input" placeholder="Buscar producto">
+    </header>
+    <div class="seleccion">
+        <select id="selecNft">
+            <option value="all">Todos</option>
+            <option value="Bored Ape Yacht Club">Bored Ape Yacht Club</option>
+            <option value="CryptoPunk">CryptoPunk</option>
+            <option value="Invisible Friends">Invisible Friends</option>
+        </select>
+    </div>
+
+    <main id="contenedor-productos">
+
+    </main>
+        
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h4>Carrito</h4>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+
+            </div>
+
+            <p class="precioProducto">Precio total: $ <span id="precioTotal"></span></p>
+        </div>
+    </div>
+    <!-- custom sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- custom modal -->
+    <script src="modal.js"></script>
+    <!-- custom stock -->
+    <script src="stock.js"></script>
+    <!-- linkeo js -->
+    <script src="main.js"></script>
+    
+</body>
+</html>
+
+
